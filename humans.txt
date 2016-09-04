@@ -1,0 +1,17 @@
+/* TEAM */
+
+Your title: javascript.xgqfrms.xyz.
+Site: xgqfrms[at]email.com,javascript.xgqfrms.xyz,xgqfrms.xyz.
+Twitter: xgqfrms.
+Location: Shanghai, China.
+
+/* THANKS */
+
+Name: javascript.xgqfrms.xyz,xgqfrms.xyz
+
+/* SITE */
+
+Last update: 2016/09/04
+Standards: HTML5, CSS3, JavaScript, C#, PHP,JavaScrip,最新,官方,标准参考,教程,ECMA-262,ES 6,ES 7,xgqfrms,github,xgqfrms.xyz.
+Components: Modernizr, jQuery, Node.js, AngularJS, React, React-Native.
+Software: Software used for the development.
