@@ -98,6 +98,6 @@
     Web Framewoks: React 2, Angular 2, Ionic 2
     Web Server: Apache , Nginx, Express, socket.io
     Sublime Text 3, Visual Studio Code 1.7, Google Chrome Canary, GitHub, React 2, Angular 2, Ionic 2
-	Standards: HTML5, CSS3, JavaScript, C#, PHP,JavaScrip,最新,官方,标准参考,教程,ECMA-262,ES 6,ES 7,xgqfrms,github,xgqfrms.xyz
+    Standards: HTML5, CSS3, JavaScript, C#, PHP, JavaScrip, 最新, 官方, 标准参考, 教程, ECMA-262, ES 6, ES 7, xgqfrms, github, xgqfrms.xyz
     Components: Modernizr, jQuery, Node.js, AngularJS, React, React-Native.
 
