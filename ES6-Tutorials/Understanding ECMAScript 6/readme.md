@@ -22,7 +22,6 @@ https://github.com/nzakas/computer-science-in-javascript
 
 
 
-
 ## Understanding ECMAScript 6 
 
 https://github.com/nzakas/understandinges6  
