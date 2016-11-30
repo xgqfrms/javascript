@@ -1,0 +1,28 @@
+{
+  "id": "5630e04ca78ae010007ddf21",
+  "type": "User",
+  "username": "xgqfrms",
+  "name": "xgqfrms",
+  "location": "Shanghai,China",
+  "website": "https://github.com/xgqfrms",
+  "bio": "GitBook for everyone!",
+  "verified": true,
+  "locked": false,
+  "site_admin": false,
+  "urls": {
+    "profile": "https://www.gitbook.com/@xgqfrms",
+    "stars": "https://www.gitbook.com/@xgqfrms/starred",
+    "avatar": "https://www.gitbook.com/@xgqfrms/avatar"
+  },
+  "permissions": {
+    "edit": null,
+    "admin": null
+  },
+  "dates": {
+    "created": "2015-10-28T14:48:44.895Z"
+  },
+  "counts": {},
+  "github": {
+    "username": "xgqfrms"
+  }
+}

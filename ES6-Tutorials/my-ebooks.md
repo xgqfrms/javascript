@@ -14,10 +14,52 @@ https://www.gitbook.com/@xgqfrms
 
 https://www.gitbook.com/@xgqfrms-github
 
+https://api.gitbook.com/author/xgqfrms-github
 
 ## gitbook
 
-https://github.com/xgqfrms/gitbook
+https://www.gitbook.com/editor  
+
+https://developer.gitbook.com/  
+
+https://api.gitbook.com/author/xgqfrms
+
+```json
+{
+  "id": "5630e04ca78ae010007ddf21",
+  "type": "User",
+  "username": "xgqfrms",
+  "name": "xgqfrms",
+  "location": "Shanghai,China",
+  "website": "https://github.com/xgqfrms",
+  "bio": "GitBook for everyone!",
+  "verified": true,
+  "locked": false,
+  "site_admin": false,
+  "urls": {
+    "profile": "https://www.gitbook.com/@xgqfrms",
+    "stars": "https://www.gitbook.com/@xgqfrms/starred",
+    "avatar": "https://www.gitbook.com/@xgqfrms/avatar"
+  },
+  "permissions": {
+    "edit": null,
+    "admin": null
+  },
+  "dates": {
+    "created": "2015-10-28T14:48:44.895Z"
+  },
+  "counts": {},
+  "github": {
+    "username": "xgqfrms"
+  }
+}
+``` 
+
+
+
+https://github.com/xgqfrms/gitbook  
+
+https://gitbookio.gitbooks.io/javascript/content/  
 
 
 
