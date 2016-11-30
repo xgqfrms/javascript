@@ -28,3 +28,5 @@ http://javascript.xgqfrms.xyz/
 
 
 JavaScrip 最新官方标准参考教程:ECMA-262 ES6,ES7
+
+<span>JavaScrip 最新官方标准参考教程: ECMA-262, ES6 ,ES7 !<a href="http://javascript.xgqfrms.xyz/" target="_blank" title="xgqfrms, JavaScrip 最新官方标准参考教程: ECMA-262, ES6 ,ES7 !">http://javascript.xgqfrms.xyz/</a></span>
