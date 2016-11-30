@@ -32,4 +32,4 @@ JavaScrip 最新官方标准参考教程:ECMA-262 ES6,ES7
 <span>JavaScrip 最新官方标准参考教程: ECMA-262, ES6 ,ES7 !<a href="http://javascript.xgqfrms.xyz/" target="_blank" title="xgqfrms, JavaScrip 最新官方标准参考教程: ECMA-262, ES6 ,ES7 !">http://javascript.xgqfrms.xyz/</a></span>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=3.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
