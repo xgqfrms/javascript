@@ -16,3 +16,9 @@
 * [Chapter 2: Into JavaScript](ch2.md)
 * [Chapter 3: Into YDKJS](ch3.md)
 * [Appendix A: Thank You's!](apA.md)
+
+
+http://www.epconcommunities.com/assets/upload/youdontknowjsupandgoing.pdf
+
+
+
