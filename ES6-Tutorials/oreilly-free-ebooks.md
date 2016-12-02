@@ -68,9 +68,6 @@ http://www.oreilly.com/security/free/
 
 
 
-
-
-
 ## Free Web Performance & DevOps Ebooks  
 
 http://www.oreilly.com/webops-perf/free/
