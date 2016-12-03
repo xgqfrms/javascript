@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessing Objects Properties with Variables </title>
+	<!-- https://www.freecodecamp.com/challenges/accessing-objects-properties-with-variables -->
+	<!-- https://www.freecodecamp.com/challenges/record-collection -->
+	<!-- https://github.com/FreeCodeCamp/FreeCodeCamp/issues/10962 -->
+</head>
+<body>
+	<div>
+		<h1>Accessing Objects Properties with Variables </h1>
+	</div>
+	<hr>
+	<div>
+		<h2>
+			JSON: <br>
+			key是数字只能使用obj[num/var]访问; <br>
+			key是字符串既可以使用obj[var/"key"]也可以使用obj.key访问
+		</h2>
+		<h3>num = /[\d+]+/ ; var = num; var = "key"; key = key</h3>
+		<pre>
+			<h3>
+				# JSON:  访问属性值的正确打开方式！
+
+				## 如果key是数字只能使用 <strong>obj[num/var]</strong> 访问;
+
+				## 如果 key是字符串既可以使用 <strong>obj["key"/var]</strong> 也可以使用 <strong>obj.key</strong> 访问
+
+				# <mark>所以，推荐使用更通用的 <strong>obj[var]</strong> 访问,保证不会出错！</mark>
+
+			</h3>
+		</pre>
+	</div>
+	<div>
+		<pre>
+			Another use of <mark>bracket notation</mark> on objects is to use a <mark>variable</mark> to access a property. 
+			This can be very useful for iterating through lists of the object properties or for doing the lookup.
+
+			Here is an example of using a variable to access a property:
+
+			var someProp = "propName";
+			var myObj = {
+			  propName: "Some Value"
+			}
+			myObj[someProp]; 
+			// "Some Value"
+
+			Here is one more:
+
+			var myDog = "Hunter";
+			var dogs = {
+			  Fido: "Mutt",
+			  Hunter: "Doberman",
+			  Snoopie: "Beagle"
+			}
+			var breed = dogs[myDog];
+			console.log(breed);
+			// "Doberman"
+
+			Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name
+		</pre>
+	</div>
+	<script>
+		// Setup
+		var testObj = {
+		  12: "Namath",
+		  16: "Montana",
+		  19: "Unitas",
+		  "abc": "abc",
+		  "xyz": "xyz",
+		  "key": "dot",
+		  "js-key": "js-dot"
+		};
+		// Only change code below this line;
+		var playerNumber = 16;
+		var player = testObj[playerNumber];//testObj[16] 
+		// === var player = testObj[16]; //testObj[16]
+		console.log("testObj[playerNumber] = "+player);
+		//Montana
+
+		// var player = testObj.16; //testObj.16
+		// SyntaxError: Unexpected number
+
+		var playerStr = "abc";
+		var playerX = testObj[playerStr];//testObj["abc"]
+		console.log("testObj[playerStr] = "+playerX);
+		//abc
+
+		var a = "xyz";
+		var pa = testObj.a;//testObj."xyz"
+		console.log("testObj.a = "+pa);
+		//undefined
+
+		var p = testObj.key;//testObj.key
+		console.log("testObj.key = "+p);
+		//dot
+
+		var s = testObj["js-key"];//testObj["js-key"]
+		console.log('testObj["js-key"] = '+s);
+		//js-dot
+	</script>
+</body>
+</html>

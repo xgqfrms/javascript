@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function.prototype.apply()</title>
+	<!-- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push -->
+</head>
+<body>
+	<div>
+		<div>
+			<h1>Function apply()</h1>
+		</div>
+		<pre>
+			The apply() method calls a function with a given this value and arguments provided as an array (or an array-like object).
+
+			Note:
+			While the syntax of this function is almost identical to that of call(), 
+			the fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
+
+			Syntax
+			fun.apply(thisArg, [argsArray])
+
+			Parameters
+
+			thisArg
+			The value of this provided for the call to fun. 
+			Note that this may not be the actual value seen by the method: 
+			if the method is a function in non-strict mode code, null and undefined will be replaced with the global object, and primitive values will be boxed.
+
+			argsArray
+			An array-like object, specifying the arguments with which fun should be called, or null or undefined if no arguments should be provided to the function.
+			Starting with ECMAScript 5 these arguments can be a generic array-like object instead of an array. 
+			See below for browser compatibility information.
+
+			Return value
+			The result of calling the function with the specified this value and arguments.
+		</pre>
+		<pre>
+			fun.apply(thisArg[, argsArray])
+
+			fun.call(thisArg[, arg1[, arg2[, ...]]])
+
+			Merging two arrays
+
+			This example uses apply() to push all elements from a second array.
+
+			var vegetables = ['parsnip', 'potato'];
+			var moreVegs = ['celery', 'beetroot'];
+
+			// Merge the second array into the first one
+			// Equivalent to vegetables.push('celery', 'beetroot');
+			Array.prototype.push.apply(vegetables, moreVegs);
+
+			console.log(vegetables); 
+			// ['parsnip', 'potato', 'celery', 'beetroot']
+		</pre>
+		<h3>
+			<mark>
+				注意：该方法的作用和 call() 方法类似，只有一个区别:<br>
+				call()方法接受的是若干个 <span>参数的列表</span>，<br>
+				apply()方法接受的是一个包含多个 <span>参数的数组</span>.<br>
+			</mark>
+		</h3>
+	</div>
+	<script>
+		//Merging two arrays
+
+		//This example uses apply() to push all elements from a second array.
+
+		var vegetables = ['parsnip', 'potato'];
+		var moreVegs = ['celery', 'beetroot'];
+
+		// Merge the second array into the first one
+		// Equivalent to vegetables.push('celery', 'beetroot');
+		Array.prototype.push.apply(vegetables, moreVegs);
+
+		console.log(vegetables); 
+		// ['parsnip', 'potato', 'celery', 'beetroot']
+	</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>ES 6</title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1>new ES6</h1>
+		</div>
+	</div>
+	<script>
+		var x = 3;
+		var foo = {
+			x : 2,
+			baz : {
+				x : 1,
+				bar : function(){
+					return this.x;
+				}
+			}
+		}
+		var go = foo.baz.bar;
+		console.log(go());
+		//3
+		console.log(foo.baz.bar());
+		//1
+
+		console.log(go);
+		//function(){ return this.x; }
+		console.log(foo.baz.bar);
+		//function(){ return this.x; }
+		/*
+		首先, bar 是一个 function();
+		调用 function, 使用 FunctionName(); 
+		*/
+		/*
+			考点：
+			1. 闭包
+			2. 对象/数组 {} 
+			3. 函数的调用方式，函数的参数
+			FuncName();
+			FuncName(agrs);//parameter
+			4. this (父对象)
+			5. 逗号(,)运算符
+			6. 冒号(:)运算符
+			7. 变量作用域 
+			var x=1;// global/local
+			x=1;  global
+		*/
+		/*
+			对象表达法 :
+			冒号在这里用来分割对象的属性和属性值。
+			对象表达式: labelName:statement
+		*/
+	</script>
+	<script>
+		j=5;
+		for (i = 0; i < 3; i++, j++)
+		{
+		   k = i + j;
+		   console.log("i="+i);
+		   console.log("j="+j);
+		   console.log("k="+k);
+		   console.log("\n");
+		}
+		/*
+			逗号运算符 (,) 
+			http://www.cnblogs.com/xgqfrms/p/5854785.html
+			https://msdn.microsoft.com/zh-cn/library/9b37css7(v=vs.94).aspx
+		*/
+	</script>
+	<script>
+		/*
+			JavaScript面试时候的坑洼沟洄——逗号、冒号与括号
+			http://www.cnblogs.com/dolphinX/p/3529249.html
+		*/
+		var a=(1,2,3);
+		console.log("a="+a);
+		//3
+		x:y:z:1,2,3;
+		//3
+		console.log("x="+x);
+		//3
+		//console.log("y="+y);
+		//Uncaught ReferenceError: y is not defined(…)(anonymous function)
+		//console.log("z="+z);
+		//Uncaught ReferenceError: y is not defined(…)(anonymous function)
+	</script>
+	<script>
+		/*var square = function(n){
+			return n*n;
+		}*/
+		// square(2);
+		// console.log("square(2)=" + square(2));
+		var square = (n) => n*n;
+		/*
+			function(n) === (n)
+			{return n*n;} === n*n;
+		*/
+		var nrs = [1,2,3,4,5,6,7,8,9];
+		var squares = nrs.map(square);
+		console.log("squares=" + squares);
+		// =>
+
+
+	</script>
+</body>
+</html>

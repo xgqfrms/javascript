@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>push & unshift</title>
+	<!-- https://www.freecodecamp.com/challenges/manipulate-arrays-with-push -->
+	<!-- https://www.freecodecamp.com/challenges/manipulate-arrays-with-unshift -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push -->
+</head>
+<body>
+	<div>
+		<div>
+			<h1>push & unshift</h1>
+			Manipulate Arrays With push()
+
+			Manipulate Arrays With unshift()
+		</div>
+	</div>
+	<div>
+		<h1>Array.prototype.push()</h1>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push</a>
+	</div>
+	<pre>
+		The push() method adds one or more elements to the end of an array and returns the new length of the array.
+
+		Syntax
+		arr.push(element1, ..., elementN);
+
+		var vegetables = ['parsnip', 'potato'];
+		var moreVegs = ['celery', 'beetroot'];
+
+		// Merge the second array into the first one
+		// Equivalent to vegetables.push('celery', 'beetroot');
+		Array.prototype.push.apply(vegetables, moreVegs);
+
+		console.log(vegetables); 
+		// ['parsnip', 'potato', 'celery', 'beetroot']
+	</pre>
+	<script>
+		// 
+	</script>
+</body>
+</html>

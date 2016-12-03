@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function.prototype.call()</title>
+	<!-- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call -->
+	<style>
+		span{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<h1>Function call()</h1>
+			<pre>
+				fun.call(thisArg[, arg1[, arg2[, ...]]])
+
+				fun.apply(thisArg[, argsArray])
+			</pre>
+			<pre>
+				The call() method calls a function with a given this value and arguments provided individually.
+
+				Note:
+				While the syntax of this function is almost identical to that of apply(), 
+				the fundamental difference is that call() accepts an argument list, 
+				while apply() accepts a single array of arguments.
+
+				Syntax
+				fun.call(thisArg[, arg1[, arg2[, ...]]])
+				Parameters
+
+				thisArg
+				The value of this provided for the call to fun.
+				Note that this may not be the actual value seen by the method: 
+				if the method is a function in non-strict mode code, 
+				null and undefined will be replaced with the global object and primitive values will be converted to objects.
+				
+				arg1, arg2, ...
+				Arguments for the object.
+				Return value
+
+				The result of calling the function with the specified this value and arguments.
+			</pre>
+			<h3>
+				<mark>
+					注意：该方法的作用和 apply() 方法类似，只有一个区别:<br>
+					call()方法接受的是若干个 <span>参数的列表</span>，<br>
+					apply()方法接受的是一个包含多个 <span>参数的数组</span>.<br>
+				</mark>
+			</h3>
+		</div>
+	</div>
+</body>
+</html>

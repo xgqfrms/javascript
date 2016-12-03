@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sort Arrays with sort</title>
+	<!-- https://www.freecodecamp.com/challenges/sort-arrays-with-sort -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort -->
+</head>
+<body>
+	<div>
+		<h1>Sort Arrays with sort</h1>
+	</div>
+	<div>
+		<pre>
+			You can use the method sort to easily <mark>sort the values in an array alphabetically or numerically</mark>.
+
+			Unlike the previous array methods we have been looking at, <mark>sort actually alters the array in place</mark>. However, it also returns this sorted array.
+
+			sort can be <mark>passed a compare function as a callback</mark>. 
+
+			The compare function should return a negative number if a should be before b, a positive number if a should be after b, or 0 if they are equal.
+
+			If no compare (callback) function is passed in, it will <mark>convert the values to strings and sort alphabetically</mark>.
+
+			Here is an example of using sort with a compare function that will sort the elements from smallest to largest number:
+
+			var array = [1, 12, 21, 2];
+			array.sort(function(a, b) {
+			  return a - b;
+			});
+
+		</pre>
+	</div>
+	<script>
+		/*
+		Use sort to sort array from largest to smallest.
+
+		Further explanation on the .sort() method can be found here.
+		*/
+		var array = [1, 12, 21, 2];
+		// Only change code below this line.
+		console.log("array = "+ array);
+		//1,12,21,2
+		array.sort(function(a, b) {
+		  return b - a;
+		  // return a - b;//1,2,12,21
+		});
+
+		console.log("array.sort = "+ array);
+		//21,12,2,1
+	</script>
+</body>
+</html>

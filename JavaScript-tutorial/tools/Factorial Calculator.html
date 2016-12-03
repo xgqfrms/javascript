@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Factorial Calculator</title>
+	<style>
+		#demo{
+			color: green;
+			background: black;
+			font-weight: 700;
+			font-size: 3em;
+			width: 560px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<h1>n的阶乘计算器，即计算n!=1*2*3*4……*n</h1>
+				<h3>Factorial Calculator</h3>
+				<div>
+					<h3><mark>factorial 阶乘</mark></h3>
+					<!-- <span>factorial result:</span> -->
+					<h4><p id="num"></p></h4>
+					<p id="demo"></p>
+				</div>
+			</div>
+			<div>
+				<form action="" name="form1">
+					<label for="name1"><h3>Please input the factorial num range form 0 to 170!</h3></label>
+					<input type="text" placeholder="0<= ? <=170" name="name1" id="input1">
+					<!-- <input type="submit" value="submit" onclick="outClick()"> -->
+					<input type="button" name="button" value="Calculate" onclick="outClick()"/>
+					<span id="out1"></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	-->	
+	<script src="./js/factorial.js"></script>
+	<!-- 
+	require
+	uglify
+	min
+	 -->
+</body>
+</html>

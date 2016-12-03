@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Working_with_array-like_objects</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push#Using_an_object_in_an_array-like_fashion -->
+</head>
+<body>
+	<div>
+		<h1>Working_with_array-like_objects</h1>
+	</div>
+	<pre>
+		Working with array-like objects
+
+		Some JavaScript objects, such as the NodeList returned by document.getElementsByTagName() or the arguments object made available within the body of a function, look and behave like arrays on the surface but do not share all of their methods. The arguments object provides a length attribute but does not implement the forEach() method, for example.
+
+		Array prototype methods can be called against other array-like objects. for example:
+
+		function printArguments() {
+		  Array.prototype.forEach.call(arguments, function(item) {
+		    console.log(item);
+		  });
+		}
+		Array prototype methods can be used on strings as well, since they provide sequential access to their characters in a similar way to arrays:
+
+		Array.prototype.forEach.call("a string", function(chr) {
+		  console.log(chr);
+		});
+	</pre>
+	<hr>
+	<pre>
+		Using an object in an array-like fashion
+
+		As mentioned above, push is intentionally generic, and we can use that to our advantage. Array.prototype.push can work on an object just fine, as this example shows. Note that we don't create an array to store a collection of objects. Instead, we store the collection on the object itself and use call on Array.prototype.push to trick the method into thinking we are dealing with an array, and it just works, thanks to the way JavaScript allows us to establish the execution context however we please.
+
+		var obj = {
+		    length: 0,
+
+		    addElem: function addElem (elem) {
+		        // obj.length is automatically incremented every time an element is added.
+		        [].push.call(this, elem);
+		    }
+		};
+
+		// Let's add some empty objects just to illustrate.
+		obj.addElem({});
+		obj.addElem({});
+		console.log(obj.length);
+		// → 2
+		Note that although obj is not an array, the method push successfully incremented obj's length property just like if we were dealing with an actual array.
+	</pre>
+	<script>
+		// 
+	</script>
+	<script>
+		var obj = {
+		    length: 0,
+		    addElem: function addElem (elem) {
+		        // obj.length is automatically incremented every time an element is added.
+		        [].push.call(this, elem);
+		    }
+		};
+
+		// Let's add some empty objects just to illustrate.
+		obj.addElem({});
+		obj.addElem({});
+		console.log(obj.length);
+		// → 2
+	</script>
+</body>
+</html>

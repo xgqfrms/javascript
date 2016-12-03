@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>ECMAScript 6 support in Mozilla</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla -->
+	<style>
+		.code{
+			background-color: rgba(0,0,0,0.8);
+			color: rgba(0,255,0,0.8);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>ECMAScript 6 support in Mozilla</h1>
+		<pre>
+			ECMAScript 2015 (6th Edition) is the current version of the ECMAScript Language Specification standard. 
+			Commonly referred to as "ES6", it defines the standard for the JavaScript implementation in SpiderMonkey, the engine used in Firefox and other Mozilla applications.
+		</pre>
+		<p>
+			<mark>SpiderMonkey</mark> is Mozilla's <mark>JavaScript engine</mark> written in C/C++. 
+			It is used in various Mozilla products, including Firefox, and is available under the MPL2.
+		</p>
+	</div>
+	<div>
+		<pre>
+			Additions to the String object
+
+			String.fromCodePoint() (Firefox 29)
+			String.prototype.codePointAt() (Firefox 29)
+			<mark>String.prototype.startsWith()</mark>, <mark>String.prototype.endsWith()</mark> (Firefox 17)
+			String.prototype.includes() (Firefox 40) (formerly String.prototype.contains() (Firefox 17))
+			String.prototype.repeat() (Firefox 24)
+			String.prototype.normalize() (Firefox 31)
+			String.raw() (Firefox 34)
+			\u{XXXXXX} Unicode code point escapes (Firefox 40)
+		</pre>
+	</div>
+</body>
+</html>

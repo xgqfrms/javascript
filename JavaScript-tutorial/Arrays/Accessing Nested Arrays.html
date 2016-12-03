@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessing Nested Arrays</title>
+	<!-- https://www.freecodecamp.com/challenges/accessing-nested-arrays -->
+</head>
+<body>
+	<div>
+		<h1>Accessing Nested Arrays</h1>
+	</div>
+	<pre>
+		var ourPets = [
+		  {
+		    animalType: "cat",
+		    names: [
+		      "Meowzer",
+		      "Fluffy",
+		      "Kit-Cat"
+		    ]
+		  },
+		  {
+		    animalType: "dog",
+		    names: [
+		      "Spot",
+		      "Bowser",
+		      "Frankie"
+		    ]
+		  }
+		];
+		ourPets[0].names[1]; // "Fluffy"
+		ourPets[1].names[0]; // "Spot"
+	</pre>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array.prototype.reduce()</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce  -->
+</head>
+<body>
+	<div>
+		<h1>
+			<pre>
+				reduce() 方法:
+				接收一个函数作为累加器（accumulator），
+				数组中的每个值（从左到右）开始合并，最终为一个值。
+			</pre>
+		</h1>
+	</div>
+	<script>
+		var x = [0, 1, 2, 3, 4, 5].reduce(function(previousValue, currentValue, currentIndex, array) {
+		  return previousValue + currentValue;
+		});
+		console.log("\nx="+x);//15
+	</script>
+</body>
+</html>

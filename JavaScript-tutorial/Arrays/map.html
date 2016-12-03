@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Iterate over Arrays with map</title>
+	<!-- https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map -->
+</head>
+<body>
+	<div>
+		<h1>Iterate over Arrays with map</h1>
+	</div>
+	<div>
+		<pre>
+			The map method is a convenient way to iterate through arrays. Here's an example usage:
+
+			var oldArray = [1, 2, 3];
+			var timesFour = oldArray.map(function(val){
+			  return val * 4;
+			});
+			console.log(timesFour); // returns [4, 8, 12]
+			console.log(oldArray);  // returns [1, 2, 3]
+
+			The map method will iterate through every element of the array, <mark>creating a new array w</mark>ith values that have been <mark>modified by the callback function</mark>, and return it. 
+			Note that <mark>it does not modify the original array</mark>.
+		</pre>
+		<pre>
+			<h1>Array functions</h1>
+			__proto__: Array[0]
+				concat:	concat()
+				constructor	: Array()
+				copyWithin:	copyWithin()
+				entries:	entries()
+				every:	every()
+				fill:	fill()
+				filter:	filter()
+				find:	find()
+				findIndex:	findIndex()
+				forEach:	forEach()
+				includes:	includes()
+				indexOf:	indexOf()
+				join:	join()
+				keys:	keys()
+				lastIndexOf:	lastIndexOf()
+				length:	0
+				map:	map()
+				pop:	pop()
+				push:	push()
+				reduce:	reduce()
+				reduceRight:	reduceRight()
+				reverse:	reverse()
+				shift:	shift()
+				slice:	slice()
+				some:	some()
+				sort:	sort()
+				splice:	splice()
+				toLocaleString:	toLocaleString()
+				toString:	toString()
+				unshift:	unshift()
+				Symbol(Symbol.iterator):	values()
+				Symbol(Symbol.unscopables):	Object
+
+				<h1>Object functions</h1>
+				__proto__:	Object
+					__defineGetter__: __defineGetter__()
+					__defineSetter__: __defineSetter__()
+					__lookupGetter__: __lookupGetter__()
+					__lookupSetter__: __lookupSetter__()
+					constructor: Object()
+					hasOwnProperty: hasOwnProperty()
+					isPrototypeOf: isPrototypeOf()
+					propertyIsEnumerable: propertyIsEnumerable()
+					toLocaleString: toLocaleString()
+					toString: toString()
+					valueOf: valueOf()
+					get __proto__: __proto__()
+					set __proto__: __proto__()
+		</pre>
+	</div>
+	<script>
+		var oldArray = [1, 2, 3];
+		var timesFour = oldArray.map(function(val){
+		  return val + 3;
+		});
+		console.log(timesFour); // returns [4, 5, 6]
+		//Array[3]
+		console.log(oldArray);  // returns [1, 2, 3]
+		//Array[3]
+		/*
+		Array[3]
+		0: 1
+		1: 2
+		2: 3
+		length: 3
+		__proto__: Array[0]
+		*/
+	</script>
+</body>
+</html>

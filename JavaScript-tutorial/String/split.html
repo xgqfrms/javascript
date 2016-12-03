@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>split</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split -->
+</head>
+<body>
+	<div>
+		<h1>String : split</h1>
+		<pre>
+			str.split([separator[, limit]])
+
+			unction splitString(stringToSplit, separator) {
+			  var arrayOfStrings = stringToSplit.split(separator);
+
+			  console.log('The original string is: "' + stringToSplit + '"');
+			  console.log('The separator is: "' + separator + '"');
+			  console.log('The array has ' + arrayOfStrings.length + ' elements: ' + arrayOfStrings.join(' / '));
+			}
+
+			var tempestString = 'Oh brave new world that has such people in it.';
+			var monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec';
+
+			var space = ' ';
+			var comma = ',';
+
+			splitString(tempestString, space);
+			splitString(tempestString);
+			splitString(monthString, comma);
+		</pre>
+	</div>
+	<script>
+		// split
+		/*
+			Reversing a String using split()
+
+			var str = 'asdfghjkl';
+			var strReverse = str.split('').reverse().join(''); // 'lkjhgfdsa'
+			// split() returns an array on which reverse() and join() can be applied
+		*/
+	</script>
+</body>
+</html>

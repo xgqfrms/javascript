@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Javascript闭包 (Closure)</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<!-- 立即执行函数 -->
+			<blockquote>
+				"立即执行函数"（Immediately-Invoked Function Expression，IIFE），可以达到不暴露私有成员的目的。
+			</blockquote>
+			<!-- Javascript闭包 (Closure) -->
+			<pre>
+				闭包是指那些能够访问独立(自由)变量的函数 (变量在本地使用，但定义在一个封闭的作用域中)。换句话说，这些函数可以“记忆”它被创建时候的环境。
+				<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures" target="_blank">
+					https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures
+				</a>
+			</pre>
+		</div>
+	</div>
+	<script>
+		var x1="abc";
+		//global
+		var x2= 3;
+		function Closure(key,value){
+			g_var = 100;
+			//internal
+			var sum = g_var+ key + value;
+			//这里有一个地方需要注意，函数内部声明变量的时候，一定要使用var命令。
+			//如果不用的话，你实际上声明了一个全局变量！
+			sum = x1+sum;
+			x3 = "xyz";
+			//global
+			return sum;
+		}
+		console.log("Closure(1,7)="+Closure(1,7));
+		// console.log("sum="+sum);
+		//Uncaught ReferenceError: sum is not defined  closure.html:25
+		// 代码解析或运行时发生错误，JavaScript引擎就会自动产生、并抛出一个Error对象的实例，然后整个程序就中断在发生错误的地方，不再往下执行。
+		console.log("x3="+x3);
+		//x3=xyz
+		console.log("x3="+x3.typeof);
+	</script>
+	<script>
+		function f1(){
+			var n=999;
+			var nAdd=function(){
+				n+=1;
+				return n;
+			}
+			//internal
+			console.log("nAdd="+nAdd);
+			console.log(nAdd);
+
+			g_nAdd=function(){
+				n+=1;
+				return n;
+			}
+			//global
+			console.log("g_nAdd="+g_nAdd);
+			console.log(g_nAdd);
+
+			function f2(){
+				console.log(n);
+			}
+			return f2;
+		}
+		var result=f1();
+		result();
+		// 999
+		g_nAdd();
+		//global
+		result(); 
+		// 1000
+	</script>
+	<!-- http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html -->
+	<script>
+		var name = "The Window";
+		//global
+		var newObj = {
+			//global ?
+			name : "My Object",
+			getNameFunc : function(){
+				return function(){
+					return this.name;
+				}
+			}
+		};
+		console.log(newObj.getNameFunc()());
+		//The Window
+		console.log(newObj instanceof Object);
+		//true
+		console.log(typeof(newObj));
+		//"object"
+	</script>
+	<script>
+		var name1 = "The Window";
+		//global
+		var newObj1 = {
+			//global ?
+			name : "My Object",
+			getNameFunc : function(){
+				var newThis = this;
+				return function(){
+					return newThis.name;
+				}
+			}
+		};
+		console.log(newObj1.getNameFunc()());
+		//The Window
+		console.log(newObj1 instanceof Object);
+		//true
+		console.log(typeof(newObj1));
+		//"object"
+	</script>
+	<script>
+		var scope = "global scope"; // A global variable
+		function checkscope() {
+			var scope = "local scope"; // A local variable
+			function f() { 
+				return scope; // Return the value in scope here
+			}			 
+			return f();
+		}
+		checkscope();// => "local scope"
+		console.log("\n"+checkscope());
+	</script>
+</body>
+</html>

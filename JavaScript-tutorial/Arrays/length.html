@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array: length && index</title>
+	<!-- JavaScript in 24 Hours, Sams Teach Yourself (6th Edition) -->
+</head>
+<body>
+	<div>
+		<h1>Array: length && index</h1>
+		<div>
+			<h1>SAMS-JS 6th</h1>
+			<a href="http://www.aazea.com/">Sams Teach Yourself JavaScript in 24 Hours 6th.pdf</a>
+		</div>
+	</div>
+	<script>
+		var myArray = new Array();
+		//var myArray = [];
+
+		myArray[0] = "Let It Rock";
+		myArray[1] = "You Give Love a Bad Name";
+		myArray[2] = "Let It Rock , You Give Love a Bad Name";
+		console.log("myArray.length = "+myArray.length);
+		// alert(a.length);
+		
+		myArray[50] = 'Ice cream day';
+		console.log("myArray.length = "+myArray.length);
+		//51 = 0-50
+		// 长度 = Max(index)+1
+		// 长度=51 && Max(index)=4
+	</script>
+</body>
+</html>

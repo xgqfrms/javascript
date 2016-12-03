@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>constants</title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1>测试</h1>
+		</div>
+		<div>
+			<h1>规范Demo:</h1>
+			<pre>
+				let 和const声明定义的变量被限定在运行执行上下文的词法环境中。
+				<mark>ECMA-262 6th: 13.3.1 Let and Const Declarations (page 194)</mark>
+			</pre>
+		</div>
+		<div>
+			<h1>错误!</h1>
+		</div>
+	</div>
+	<!--
+	<script>
+		console.log(foo); // 输出undefined
+		console.log(bar); // 报错ReferenceError
+
+		var foo = 2; //可以重复定义/声明
+		let bar = 2; 
+		//不可以重复定义/声明，
+		//调用 let 变量前，必须先声明，才可以调用 let 变量。
+		var foo = 3;
+		let bar = 3;
+	</script>
+	-->
+	<script>
+		const PI = 3.141593;
+		//undefined
+		PI > 3.0;
+		//true
+		const PI = 3.14;
+		//Uncaught SyntaxError: Identifier 'PI' has already been declared
+	</script>
+</body>
+</html>

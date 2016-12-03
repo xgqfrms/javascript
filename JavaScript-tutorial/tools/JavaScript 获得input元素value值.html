@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 获得input元素value值</title>
+	<!-- http://aquarius-zf.iteye.com/blog/605144 -->
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<h1>JavaScript 获得input元素value值</h1>
+				<form action=""  name="myform1">
+				   <input type="text" name="name1" id="nn" />
+				   <input type="button" name="button" value="获取" onclick="outClick1()" />
+				   <!-- refesh error -->
+				   <!-- <input type="submit" value="submit" onclick="outClick()"> -->
+				   <span id="out1"></span>
+				</form>
+
+				<form action="" name="myform2">
+				   <input type="text" name="name2" id="fi" />
+				   <input type="button" name="button" value="获取" onclick="outClick2()" />
+				   <span id="out2"></span>
+				</form> 
+			</div>
+		</div>
+	</div>
+	<script>  
+		function outClick1(){  
+			var a=myform1.name1.value;  
+			// alert(a);
+			document.getElementById("out1").innerHTML = "input1 = "+a;
+		}
+		function outClick2(){  
+		    var a=document.getElementById("fi").value;  
+		    // alert(a);
+		    document.getElementById("out2").innerHTML = "input2 = "+a;
+		}   
+	 </script>
+</body>
+</html>

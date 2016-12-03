@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join Strings with join</title>
+	<!-- https://www.freecodecamp.com/challenges/join-strings-with-join-->
+</head>
+<body>
+	<div>
+		<h1>Join Strings with join</h1>
+	</div>
+	<div>
+		<pre>
+			We can use the join method to join each element of an array into a string separated by whatever delimiter you provide as an argument.
+
+			The following is an example of using join to join all of the elements of an array into a string with all the elements separated by word and:
+
+			var veggies = ["Celery", "Radish", "Carrot", "Potato"];
+			var salad = veggies.join(" and ");
+			console.log(salad); // "Celery and Radish and Carrot and Potato" 
+			
+		</pre>
+	</div>
+	<script>
+		var joinMe = ["Split","me","into","an","array"];
+		var joinedString = '';
+
+		// Only change code below this line.
+
+		joinedString = joinMe.join(" ");//space
+		console.log("joinedString = "+joinedString);
+		//Split me into an array
+	</script>
+</body>
+</html>

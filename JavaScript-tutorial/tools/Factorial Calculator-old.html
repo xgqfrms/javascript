@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Factorial Calculator</title>
+	<!-- <meta name="description" content="n的阶乘计算器，即计算n!=1*2*3*4……*n"> -->
+	<!-- http://www.numberempire.com/factorialcalculator.php -->
+	<!-- http://www.jisuanqinet.com/shuxue/jicheng.html -->
+	<!-- http://aquarius-zf.iteye.com/blog/605144 -->
+	<style>
+		#demo{
+			color: green;
+			background: black;
+			font-weight: 700;
+			font-size: 3em;
+			width: 80px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<h1>n的阶乘计算器，即计算n!=1*2*3*4……*n</h1>
+				<h3>Factorial Calculator</h3>
+				<div>
+					<h3><mark>factorial 阶乘</mark></h3>
+					<p id="num"></p>
+					<p id="demo"></p>
+				</div>
+			</div>
+			<div>
+				<!-- 
+				refresh page error || bug 
+				type="submit"
+
+				type="button"
+				no refresh
+				-->
+				<form action="" name="form1">
+					<input type="text" placeholder="0<= ? <=170" name="name1" id="input1">
+					<!-- <input type="submit" value="submit" onclick="outClick()"> -->
+					<input type="button" name="button" value="submit" onclick="outClick()"/>
+					<span id="out1"></span>
+				</form>
+			</div>
+			<div>
+				<form action="" name="form2">
+					<input type="text" placeholder="range: [0,170]" name="name2" id="input2">
+					<!-- <input type="submit" value="submit" onclick="outName()"> -->
+					<input type="button" name="button" value="submit" onclick="outName()"/>
+					<span id="out2"></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		function outClick(){
+			let iv = document.getElementById('input1').value;
+			document.getElementById("out1").innerHTML = "input1 = "+iv;
+			// alert(iv);
+		}
+		function outName(){
+			let nv = form2.name2.value;
+			document.getElementById("out2").innerHTML = "input2 = "+nv;
+			// alert(nv);
+		}
+	</script>
+	<!-- 
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/factorial.js"></script> 
+	-->
+	<!-- 
+	require
+	uglify
+	min
+	 -->
+</body>
+</html>

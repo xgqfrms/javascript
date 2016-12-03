@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condense arrays with reduce</title>
+	<!-- https://www.freecodecamp.com/challenges/condense-arrays-with-reduce -->
+</head>
+<body>
+	<div>
+		<h1>Condense arrays with reduce</h1>
+	</div>
+	<div>
+		<pre>
+			The array method reduce is used to iterate through an array and condense it into one value.
+
+			To use reduce you pass in a callback whose <mark>arguments are an accumulator</mark> (in this case, previousVal) and <mark>the current value</mark> (currentVal).
+
+			The accumulator is like a total that reduce keeps track of after each operation. 
+
+			The current value is just the next element in the array you're iterating through.
+
+			reduce has <mark>an optional second argument</mark> which can be used to <mark>set the initial value of the accumulator</mark>. 
+			If no initial value is specified it(accumulator) will be <mark>the first array element</mark> and currentVal will start with <mark>the second array element</mark>.
+
+			Here is an example of reduce being used to subtract all the values of an array:
+
+			var singleVal = array.reduce(function(previousVal, currentVal) {
+			  return previousVal - currentVal;
+			}, 0);
+
+			Use the reduce method to sum all the values in array and assign it to singleVal.
+		</pre>
+	</div>
+	<script>
+		var array = [4,5,6,7,8];
+		var singleVal = 0;
+
+		// Only change code below this line.
+
+		singleVal = array.reduce(function(previousVal, currentVal) {
+			return previousVal + currentVal;//0 +4 +5 +6 +7 +8
+			//return previousVal += currentVal;
+		}, 0);
+		console.log("singleVal = "+singleVal);//30
+		//accumulator = previousVal;
+		//accumulator.value = 0;
+		//currentVal = 4(the first array element)
+
+		var s = array.reduce(function(prev, current) {
+			return prev - current;// 0 -4 -5 -6 -7 -8
+			//return prev -= current;
+		}, 0);
+		//accumulator = prev;
+		//accumulator.value = 0;
+		//current = 4(the first array element)
+		console.log("s = "+ s);//-30
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessing Objects Properties with the Dot Operator</title>
+	<!-- https://www.freecodecamp.com/challenges/accessing-objects-properties-with-the-dot-operator -->
+</head>
+<body>
+	<div>
+		<h1>Accessing Objects Properties with the Dot Operator</h1>
+		<pre>
+			There are two ways to access the properties of an object: the dot operator (.) and bracket notation ([]), similar to an array.
+
+			The dot operator is what you use when you know the name of the property you're trying to access ahead of time.
+
+			Here is a sample of using the dot operator (.) to read an object property:
+
+			var myObj = {
+			  prop1: "val1",
+			  prop2: "val2"
+			  "prop3"
+			};
+			var prop1val = myObj.prop1; // val1
+			var prop2val = myObj["prop3"]; // ???
+		</pre>
+		<pre>
+			<h1><mark>Errors: 使用JS对象的属性值，常见大坑！</mark></h1>
+			<a href="https://www.freecodecamp.com/challenges/testing-objects-for-properties">https://www.freecodecamp.com/challenges/testing-objects-for-properties</a>
+
+			// Setup
+			var myObj = {
+			  gift: "pony",
+			  pet: "kitten",
+			  bed: "sleigh"
+			};
+			function checkObj(checkProp) {
+			  // Your Code Here
+			  var x = myObj.hasOwnProperty(checkProp); 
+			  if(x){
+			    //return myObj.checkProp;
+			    // <h3> gift   参数是<mark>变量(字符串)</mark>，使用 Obj.var_str 获取对象的属性值！</h3>
+			    return myObj[checkProp];
+			    // <h3>"gift"  参数是<mark>"字符串"</mark>，使用 Obj[str] 获取对象的属性值！</h3>
+			  }else{
+			    return "Not Found";
+			  }
+			}
+			// Test your code by modifying these values
+			checkObj("gift");
+			//checkObj(gift);
+			/*
+			使用变量，代替属性名！
+			var checkProp = "gift"
+			checkObj(checkProp);
+
+			myObj[checkProp];  === myObj["gift"]; // 正确
+
+			myObj.checkProp;  === myObj."gift";  // 错误
+			*/
+		</pre>
+	</div>
+	<script>
+		var myObj = {
+		  gift: "pony",
+		  pet: "kitten",
+		  bed: "sleigh"
+		};
+		function checkObj(checkProp) {
+			console.log("myObj.checkProp =" + myObj.checkProp);
+			console.log("myObj[checkProp] =" + myObj[checkProp]);
+		}
+		checkObj("gift");
+		// console.log("myObj.gift =" + myObj.gift);
+		// console.log("myObj['gift'] =" + myObj["gift"]);
+	</script>
+</body>
+</html>

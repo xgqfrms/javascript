@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forEach</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach -->
+</head>
+<body>
+	<div>
+		<h1>forEach</h1>
+		<pre>
+			The forEach() method executes a provided function once per array element.
+
+			Syntax
+			arr.forEach(callback[, thisArg])
+		</pre>
+	</div>
+	<pre>
+		var fruits = ["Apple", "Banana"];
+
+		fruits.forEach(function (item, index, array) {
+		  console.log(item, index);
+		});
+
+		// Apple 0
+		// Banana 1
+	</pre>
+	<script>
+		var fruits = ["Apple", "Banana"];
+
+		fruits.forEach(function (item, index, array) {
+		  console.log(item, index);
+		});
+		
+		// Apple 0
+		// Banana 1
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>null & undefined</title>
+</head>
+<body>
+	<div>
+		<h1>null & undefined</h1>
+		<mark>'use strict';</mark>
+	</div>
+	<pre>
+		xgqfrms 说：
+		<!-- http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html -->
+		<!-- http://javascript.ruanyifeng.com/grammar/basic.html -->
+		<!-- http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html -->
+		<!-- https://www.freecodecamp.com/challenges/global-vs-local-scope-in-functions -->
+		var a;
+		if(a==undefined) alert('undefined');//true
+		if(a==null) alert('null');//true
+		if(null==NaN) alert('NaN=null');//undefined
+		if(undefined==NaN) alert('NaN=undefined');//undefined
+		if(NaN) alert('NaN');//undefined
+
+
+		var a=null;//(0/false)
+		var b=undefined;//(false)
+		var c = 7 ;
+		alert('undefined+null='+(a+b));//NaN
+		alert('c+null='+(a+c));//7
+		alert('c+undefined='+(b+c));//NaN
+		chrome 测试结果！
+		个人认为：
+		null 的取值是(0/false)，
+		undefined 的取值是(false/NaN)。
+	</pre>
+</body>
+</html>

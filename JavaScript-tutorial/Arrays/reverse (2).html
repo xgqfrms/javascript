@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reverse</title>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse -->
+</head>
+<body>
+	<div>
+		<h1>Array : reverse</h1>
+		<pre>
+			arr.reverse()
+
+			var myArray = ['one', 'two', 'three'];
+			myArray.reverse(); 
+
+			console.log(myArray) // ['three', 'two', 'one']
+		</pre>
+	</div>
+	<script>
+		// reverse
+		// arr.reverse()
+		function reverseString(str) {
+
+		  var a = [];//array
+		  for (var i = 0; i < str.length; i++) {
+			a[i] = str[i];
+			// console.log("a[i]="+a[i]);
+		  }
+		  a.reverse();
+		  // join()
+		  str = a.join('');
+		  return str;
+		}
+
+		reverseString("hello");
+	</script>
+</body>
+</html>

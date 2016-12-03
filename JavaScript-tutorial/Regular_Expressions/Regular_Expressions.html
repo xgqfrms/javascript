@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Regular_Expressions</title>
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+</head>
+<body>
+	<div>
+		<div>
+			<h1>Regular_Expressions</h1>
+			<pre>
+				<h3>Creating a regular expression</h3>
+				var re = /ab+c/;
+
+				var re = new RegExp("ab+c");
+
+				var myRe = /d(b+)d/gi;
+				var myArray = myRe.exec("cdbbdbsbz");
+
+				var myRe = /^[0,9]+$/gi;
+				var reg = myRe.exec(iv);
+				//exec() 方法为指定的一段字符串执行搜索匹配操作。它的返回值是一个数组或者 null。
+			</pre>
+		</div>
+	</div>
+	<script>
+		let iv = document.getElementById('input1').value;
+		// regex (/^[0,9]*$/)
+		// only num [0,170]
+		var reg = /^[0,9]+$/gi;
+		let reg = iv.regex();
+	</script>
+</body>
+</html>

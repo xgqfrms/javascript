@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 严格模式.html</title>
+</head>
+<body>
+	<div>
+		<h1>Javascript 严格模式.html</h1>
+	</div>
+	<pre>
+		<!--  -->
+	</pre>
+	<script>
+		/*
+			"use strict";
+			x = 3.14;   
+			// x is not defined
+
+			"use strict";
+			myFunction();
+			function myFunction() {
+			    y = 3.14;
+			    // 这将会产生一个错误，因为y是未被声明的。
+			};
+
+			myFunction();
+			function myFunction() {
+			   "use strict";
+			    y = 3.14;   
+			    // y is not defined
+			}
+		*/
+		/*
+			"use strict";
+			var x = 3.14;
+			delete x;   
+			// Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
+			"use strict";
+			function x(p1, p2) {}; 
+			delete x;
+			// Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.(不合格的标识符不允许)
+		*/
+		/*
+			"use strict";
+			var x = 010;
+			// Uncaught SyntaxError: Octal literals are not allowed in strict mode. (八进制字面量不允许)
+			"use strict";
+			var x = \010;
+			// Uncaught SyntaxError: Invalid or unexpected token(转义字符不允许)
+		*/
+		/*
+			"use strict";
+			var obj = {};
+			Object.defineProperty(obj, "x", {value:0, writable:false});
+			obj.x = 3.14;
+			//写入只读属性是不允许的：
+			"use strict";
+			var obj = {get x() {return 0} };
+			obj.x = 3.14;
+			//写入get-only(只能获得)属性是不允许的：
+			"use strict";
+			delete Object.prototype;
+			//删除一个不可删除的属性是不允许的：
+			"use strict";
+			var eval = 3.14;
+			//字符串“eval”不能用作变量：
+			"use strict";
+			var arguments = 3.14;
+			// 字符串“arguments”不能用作变量：
+			"use strict";
+			with (Math){x = cos(2)};
+			// with语句是不允许的
+			"use strict";
+			eval ("var x = 2");
+			alert (x);
+			// 出于安全的原因，在eval()被调用的作用域内，是不允许它创建变量的！
+			"use strict";
+			var public = 1500;
+			// 未来保留的关键字在严格模式是不允许的。
+		*/
+	</script>
+</body>
+</html>

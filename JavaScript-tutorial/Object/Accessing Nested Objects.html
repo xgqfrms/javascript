@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessing Nested Objects</title>
+	<!-- https://www.freecodecamp.com/challenges/accessing-nested-objects -->
+</head>
+<body>
+	<div>
+		<h1>Accessing Nested Objects</h1>
+	</div>
+	<pre>
+		var ourStorage = {
+		  "desk": {
+		    "drawer": "stapler"
+		  },
+		  "cabinet": {
+		    "top drawer": { 
+		      "folder1": "a file",
+		      "folder2": "secrets"
+		    },
+		    "bottom drawer": "soda"
+		  }
+		};
+		ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+		ourStorage.desk.drawer; // "stapler"
+	</pre>
+	<script>
+		// Setup
+		var myStorage = {
+		  "car": {
+		    "inside": {
+		      "glove box": "maps",
+		      "passenger seat": "crumbs"
+		     },
+		    "outside": {
+		      "trunk": "jack"
+		    }
+		  }
+		};
+		// Only change code below this line
+		var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+	</script>
+</body>
+</html>
