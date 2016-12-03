@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profile Lookup</title>
+	<!-- https://github.com/FreeCodeCamp/FreeCodeCamp/issues/10962 -->
+	<!-- https://www.freecodecamp.com/challenges/profile-lookup -->
+</head>
+<body>
+	<div>
+		<h1>Profile Lookup</h1>
+		<pre>
+			Profile Lookup
+			We have an array of objects representing different people in our contacts lists.
+
+			A lookUpProfile function that takes firstName and a property (prop) as arguments has been pre-written for you.
+
+			The function should check if firstName is an actual contact's firstName and the given property (prop) is a property of that contact.
+
+			If both are true, then return the "value" of that property.
+
+			If firstName does not correspond to any contacts then return "No such contact"
+
+			If prop does not correspond to any valid properties then return "No such property"
+		</pre>
+	</div>
+	<script>
+		//Setup
+		var contacts = [
+		    {
+		        "firstName": "Akira",
+		        "lastName": "Laine",
+		        "number": "0543236543",
+		        "likes": ["Pizza", "Coding", "Brownie Points"]
+		    },
+		    {
+		        "firstName": "Harry",
+		        "lastName": "Potter",
+		        "number": "0994372684",
+		        "likes": ["Hogwarts", "Magic", "Hagrid"]
+		    },
+		    {
+		        "firstName": "Sherlock",
+		        "lastName": "Holmes",
+		        "number": "0487345643",
+		        "likes": ["Intriguing Cases", "Violin"]
+		    },
+		    {
+		        "firstName": "Kristian",
+		        "lastName": "Vos",
+		        "number": "unknown",
+		        "likes": ["Javascript", "Gaming", "Foxes"]
+		    }
+		];
+		function lookUpProfile(firstName, prop){
+		// Only change code below this line
+		  var a=false,b=false,x;
+		  for(var i=0;i < contacts.length;i++){
+		    if(firstName === contacts[i].firstName && contacts[i].hasOwnProperty(prop) === true){
+		      a = true;
+		      b = true;
+		      x = contacts[i][prop];
+		      //only when both true,  we need to get values
+		    }
+		//     else error
+		    if(firstName === contacts[i].firstName === true){
+		      a = true;
+		    }
+		    if(contacts[i].hasOwnProperty(prop) === true){
+		      b = true;
+		    }
+		  }
+		  if( a === true  && b === true){
+		    return x;
+		    //return the "value" of that property.
+		  }
+		  if(a === true && b === false){
+		    return "No such property";
+		  }else if(a === false &&b === true){
+		    return "No such contact";
+		  }else{
+		    return;
+		  }
+		// Only change code above this line
+		}
+		// Change these values to test your function
+		var s1 = lookUpProfile("Akira", "likes");
+		console.log("s1 ="+s1);
+		var s2 = lookUpProfile("Kristian", "lastName");
+		console.log("s2 ="+s2);
+		//"Vos"
+		var s3 = lookUpProfile("Sherlock", "likes");
+		console.log("s3 ="+s3);
+		//["Intriguing Cases", "Violin"]
+		var s4 = lookUpProfile("Harry","likes");
+		console.log("s4 ="+s4);
+		//array
+		var s5 = lookUpProfile("Bob", "number");
+		console.log("s5 ="+s5);
+		//"No such contact"
+		var s6 = lookUpProfile("Akira", "address");
+		console.log("s6 ="+s6);
+		//"No such property"
+	</script>
+</body>
+</html>

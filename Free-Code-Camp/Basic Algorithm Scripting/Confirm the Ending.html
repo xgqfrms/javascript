@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Confirm the Ending</title>
+	<!-- https://www.freecodecamp.com/challenges/confirm-the-ending -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring -->
+</head>
+<body>
+	<div>
+		<h1>Confirm the Ending</h1>
+	</div>
+	<pre>
+		Check if a string (first argument, str) ends with the given target string (second argument, target).
+
+		This challenge can be solved with the <mark>.endsWith()</mark> method, which was introduced in <mark>ES2015.</mark> 
+		But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
+
+		Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+		Here are some helpful links:
+
+		String.prototype.substr()
+		String.prototype.substring()
+	</pre>
+	<script>
+		function confirmEnding(str, target) {
+		  //substring
+		  var l = str.length;
+		  var l2 = target.length;
+		  console.log("l = "+l);//7,11
+		  console.log("l2 = "+l2);//1,4
+		  // var ls = str[l-1];
+		  var ls = str.substr(l-l2,l-1);
+		  console.log("ls = "+ls);//n,same
+		  console.log("target = "+target);//n,same
+		  //console.log("typeof(ls) = "+typeof(ls));//string
+		  //console.log("typeof(target) = "+typeof(target));//string
+		  var b;
+		  if (ls === target) {
+		  	b = true;
+		  } else {
+		  	b = false;
+		  }
+		  return b;
+		}
+		var c = confirmEnding("Bastian", "n");// 1 char
+		console.log("c = "+c);//true
+		var c2 = confirmEnding("Open sesame", "sxame");// sub str
+		console.log("c = "+c2);//true
+	</script>
+</body>
+</html>

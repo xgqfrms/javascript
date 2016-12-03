@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chunky Monkey</title>
+	<!-- https://www.freecodecamp.com/challenges/chunky-monkey -->
+</head>
+<body>
+	<div>
+		<h1>Chunky Monkey 一维数组 => 二维数组</h1>
+	</div>
+	<pre>
+		Write a function that splits an array (first argument) into groups the length of size (second argument) 
+		and returns them as a two-dimensional array.
+
+		Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+		Here are some helpful links:
+
+		Array.prototype.push()
+		Array.prototype.slice()
+	</pre>
+	<script>
+		function chunkArrayInGroups(arr, size) {
+			var n = Math.ceil(arr.length/size);
+			console.log("n = "+n);
+			var a = [];
+			for (var i = 0; i < arr.length; i++) {
+				for (var j = 0; j < size; j++) {
+					a[j] =arr[j];
+				}
+			}
+			return a;
+		}
+
+		var x1 = chunkArrayInGroups(["a", "b", "c", "d"], 2);// 4/2 =2+0
+		console.log("x1 = "+x1);
+		//[["a", "b"], ["c", "d"]]
+		var x2 = chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3)// 6/3 =2+0
+		console.log("x2 = "+x2);
+		//[[0, 1, 2], [3, 4, 5]]
+		var x3 = chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 4);// 9/4 =2+1 Math.ceil();向上取整
+		console.log("x1 = "+x3);
+		//[[0, 1, 2, 3], [4, 5, 6, 7], [8]]
+	</script>
+</body>
+</html>

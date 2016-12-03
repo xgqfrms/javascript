@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title Case a Sentence</title>
+	<!-- https://www.freecodecamp.com/challenges/title-case-a-sentence -->
+	<!-- http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript -->
+</head>
+<body>
+	<div>
+		<h1>Title Case a Sentence</h1>
+	</div>
+	<script>		
+		function titleCase(str) {
+		   var re = /\s+/;
+		   // var space= str.replace(re,"");
+		   var nameList = str.split(re);
+		   console.log("nameList.length =" + nameList.length);
+		   var max=[];
+		   for(var i=0;i < nameList.length ;i++){
+		            // var s = nameList[i][0].toUpperCase();
+		            //console.log(" nameList[i][0] ="+ nameList[i][0]);
+		            var s = nameList[i][0];//String 是 Array
+		            var sl= nameList[i].length;
+		            console.log("typeof(nameList[i]) =" + typeof(nameList[i]));//string
+		            console.log("nameList[i].length =" + sl);
+		            // var s2 = nameList[i].toString();
+		            // s2 = s2.spilt(1,sl -1);
+		            var s2 = nameList[i].substr(1,sl -1);// no first char
+		            console.log("s2 =" + s2);
+		            //******************************************************************************************************
+		            // 字符串的不可变性 ： 可以覆盖，不可以修改
+		            //？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+		            //nameList[i][0] = s.toUpperCase();//字符串，才好使!
+		            console.log("s =" + s);
+		            console.log("s.toUpperCase() =" + s.toUpperCase());
+		            //console.log(" nameList[i][0] ="+ nameList[i][0]);
+		            s = s.toUpperCase();// 首字母 Upper
+		            s2 = s2.toLowerCase();// 其他字母 Lower
+		            max[i] = s+s2;
+					/*
+					max[i] = nameList[i];
+					console.log("max[i] =" + max[i]); 
+					console.log("typeof(max[i]) =" + typeof(max[i]));//string
+					var ss = max[i].toString();
+					console.log(" typeof(ss) =" + typeof(ss)); 
+					console.log("ss =" + ss); 
+					// ss.replace(s,s.toUpperCase());
+					ss.replace(s,"?");
+					console.log("ss.replace(s,s.toUpperCase()) =" + ss); 
+					//max[i][0] = s.toUpperCase();
+					console.log("max[i][0] =" + max[i][0]); 
+					*/
+			}
+		    console.log("max =" + max);
+		    //max.join("");
+			console.log("typeof(max) =" + typeof(max));//object
+			console.log("typeof(max.toString())" + typeof(max.toString()));//string
+			//return max.toString() ;// I'm,A,Little,Tea,Pot 
+			var rs = max.toString();
+			var reg = /\,/g;// 匹配所有 g
+			return rs.replace(reg," ");
+			//return 发生中断,后面的js语句是不会被执行的！
+		}
+		titleCase("I'm a little tea pot");
+
+		//How do I make the first letter of a string uppercase in JavaScript?
+		/*http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript*/
+		function ucfirst(str) {
+		    var firstLetter = str.substr(0, 1);
+		    return firstLetter.toUpperCase() + str.substr(1);
+		}
+	</script>
+</body>
+</html>

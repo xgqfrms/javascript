@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counting Cards</title>
+	<!-- https://www.freecodecamp.com/challenges/counting-cards -->
+</head>
+<body>
+	<div>
+		<h1>Counting Cards</h1>
+	</div>
+	<script>
+		var count = 0;
+		function cc(card) {
+		  // Only change code below this line
+		    var a;
+		    switch(card){
+		    case 2:
+		    case 3:
+		    case 4:
+		    case 5:
+		    case 6: 
+		//         count ++;
+		        a = 1;
+		      break;
+		    case 7:
+		    case 8:
+		    case 9:
+		//         count = 0;
+		         a = 0;
+		     break;
+		    case 10:
+		    case  'J':
+		    case  'Q':
+		    case  'K':
+		    case  'A':
+		//         count --;
+		         a = -1;
+		     break;
+		  }
+		  count += a;
+		  
+		  if(count > 0){
+		    a = count + " Bet";
+		  }else{
+		    a = count + " Hold";
+		  }
+		  return a;
+		  // Only change code above this line
+		}
+		// test
+		cc(2); cc(3); cc(7); cc('K'); cc('A');
+	</script>
+</body>
+</html>
