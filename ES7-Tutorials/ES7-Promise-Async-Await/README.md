@@ -6,7 +6,11 @@
 1. install  
 ```sh
 $ npm i -S replaceall 
-$ npm i -D babel-cli babel-preset-es2017 replaceall 
+# https://www.npmjs.com/package/replaceall  
+
+$ npm i -D babel-cli babel-preset-es2017 
+# https://www.npmjs.com/package/babel-cli  
+# https://www.npmjs.com/package/babel-preset-es2017  
 ``` 
 
 2. Run  
