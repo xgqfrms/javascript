@@ -25,4 +25,12 @@ $ npm start
 
 4. See the result on yuor terminal.  
 
+## npm scripts
 
+```json
+    "scripts": {
+        "build": "babel src -d dist",
+        "start": "npm run build && node dist/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+``` 
