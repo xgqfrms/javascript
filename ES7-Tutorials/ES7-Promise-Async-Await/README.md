@@ -25,6 +25,8 @@ $ npm start
 
 4. See the result on yuor terminal.  
 
+
+
 ## npm scripts
 
 ```json
@@ -34,3 +36,6 @@ $ npm start
         "test": "echo \"Error: no test specified\" && exit 1"
     },
 ``` 
+
+## gulp uglify ???
+

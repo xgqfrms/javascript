@@ -1,5 +1,4 @@
 
-
 // 2nd promise
 let showOff = (() => {
     var _ref = _asyncToGenerator(function* (phone) {
@@ -33,14 +32,10 @@ let askMom = (() => {
     };
 })();
 
-// IIFE
-
-
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 /* ES7 async & await */
 const isMomHappy = true;
-
 // 1nd Promise
 const willIGetNewPhone = new Promise((resolve, reject) => {
     if (isMomHappy) {
@@ -50,6 +45,8 @@ const willIGetNewPhone = new Promise((resolve, reject) => {
         const reason = new Error(`Mom is not happy!`);
         reject(reason);
     }
-});;_asyncToGenerator(function* () {
+});;;
+// IIFE
+_asyncToGenerator(function* () {
     yield askMom();
 })();

@@ -1,6 +1,5 @@
 /* ES7 async & await */
 const isMomHappy = true;
-
 // 1nd Promise
 const willIGetNewPhone = new Promise((resolve, reject) => {
     if(isMomHappy) {
@@ -11,7 +10,6 @@ const willIGetNewPhone = new Promise((resolve, reject) => {
         reject(reason);
     }
 });
-
 // 2nd promise
 async function showOff(phone) {
     return new Promise((resolve, reject) => {
@@ -19,7 +17,6 @@ async function showOff(phone) {
         resolve(message);
     });
 };
-
 // call all promise
 async function askMom() {
     try {
@@ -28,12 +25,10 @@ async function askMom() {
         let message = await showOff(phone);
         console.log(message);
         console.log(`after asking Mom `);
-    }
-    catch(error) {
+    }catch(error) {
         console.log(error.message);
     }
-}
-
+};
 // IIFE
 (async () => {
     await askMom();
