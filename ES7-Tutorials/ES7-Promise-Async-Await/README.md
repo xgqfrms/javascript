@@ -7,7 +7,6 @@ https://jakearchibald.com/2014/es7-async-functions/
 https://github.com/tc39/ecmascript-asyncawait  
 
 
-
 > Simple example on async Await
 
 ## To start:  
