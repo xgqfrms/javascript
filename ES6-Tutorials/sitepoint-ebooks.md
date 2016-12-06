@@ -1,9 +1,8 @@
-# sitepoint free ebooks
+# sitepoint free ebooks  
 
-https://www.sitepoint.com/premium/purchase-success/Z2lkOi8vbGVhcm5hYmxlL1B1cmNoYXNlLzEyMDQ5Mw
+https://www.sitepoint.com/premium/purchase-success/Z2lkOi8vbGVhcm5hYmxlL1B1cmNoYXNlLzEyMDQ5Mw  
 
-
-https://www.sitepoint.com/premium/topics/all?q=&limit=48&offset=0&page=1&content_types[]=Book&slugs[]=all&states[]=available&order=
+https://www.sitepoint.com/premium/topics/all?q=&limit=48&offset=0&page=1&content_types[]=Book&slugs[]=all&states[]=available&order=  
 
 ## codes  
 
