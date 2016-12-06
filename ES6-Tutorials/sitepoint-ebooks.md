@@ -20,6 +20,9 @@ https://www.sitepoint.com/premium/books/scrum-novice-to-ninja
 https://www.sitepoint.com/premium/books/bootstrap-a-sitepoint-anthology-1  
 
 ## ()  
+The JavaScript Anthology 101 Essential Tips, Tricks & Hacks(4 Chapter Sample & 2006)
+
+
 
 ### codes  
 
