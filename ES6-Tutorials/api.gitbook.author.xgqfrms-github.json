@@ -1,28 +1,28 @@
 {
-  "id": "57c1bc4e8716de1000bf41ed",
-  "type": "User",
-  "username": "xgqfrms-github",
-  "name": "anonymous",
-  "location": "UFO",
-  "website": "http://www.webgeeker.xyz",
-  "bio": "free share, free learning, free writting!",
-  "verified": false,
-  "locked": false,
-  "site_admin": false,
-  "urls": {
-    "profile": "https://www.gitbook.com/@xgqfrms-github",
-    "stars": "https://www.gitbook.com/@xgqfrms-github/starred",
-    "avatar": "https://avatars0.githubusercontent.com/xgqfrms-GitHub"
-  },
-  "permissions": {
-    "edit": null,
-    "admin": null
-  },
-  "dates": {
-    "created": "2016-08-27T16:14:06.593Z"
-  },
-  "counts": {},
-  "github": {
-    "username": "xgqfrms-GitHub"
-  }
+    "id": "57c1bc4e8716de1000bf41ed",
+    "type": "User",
+    "username": "xgqfrms-github",
+    "name": "anonymous",
+    "location": "UFO",
+    "website": "http://www.webgeeker.xyz",
+    "bio": "free share, free learning, free writting!",
+    "verified": false,
+    "locked": false,
+    "site_admin": false,
+    "urls": {
+        "profile": "https://www.gitbook.com/@xgqfrms-github",
+        "stars": "https://www.gitbook.com/@xgqfrms-github/starred",
+        "avatar": "https://avatars0.githubusercontent.com/xgqfrms-GitHub"
+    },
+    "permissions": {
+        "edit": null,
+        "admin": null
+    },
+    "dates": {
+        "created": "2016-08-27T16:14:06.593Z"
+    },
+    "counts": {},
+    "github": {
+        "username": "xgqfrms-GitHub"
+    }
 }
