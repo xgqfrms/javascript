@@ -75,9 +75,14 @@ addLoadEvent(function() {
 
 
 
-// HTML5 DOMContentLoaded 
+// HTML5 DOMContentLoaded : 
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+});
 
 /**
+ * https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded
  * https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onload
  * https://developer.mozilla.org/en-US/docs/Web/Events
  * https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener
