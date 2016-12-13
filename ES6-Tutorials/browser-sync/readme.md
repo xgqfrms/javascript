@@ -17,6 +17,25 @@ $ npm i -S browser-sync
 
 ```sh
 $ browser-sync start --server --files "./*.*"
+## path error ???
+
+$ browser-sync start --server --files "./*.html"
+
+## html folder path (./ === html5)
+
+> app
+....html5
+....css3
+
+## /app path
+$ browser-sync start --server --files "./html5/*.html & ./html5/*.js"
+
+# or 
+
+
+## /app/html5 path
+$ cd html5
+$ browser-sync start --server --files "./*.html"
 
 ``` 
 

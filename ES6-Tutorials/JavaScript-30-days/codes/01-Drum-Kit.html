@@ -20,10 +20,10 @@
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Videos</li>
-                <li>Codes</li>
-                <li>About</li>
+                <li class="item">Home</li>
+                <li class="item">Videos</li>
+                <li class="item">Codes</li>
+                <li class="item">About</li>
             </ul>
         </nav>
     </header>
@@ -33,11 +33,19 @@
         </section>
     </main>
     <footer>
-        <div>
-            <p> copright &copy; xgqfrms 2016</p>
+        <div class="container-fluid">
+            <p class="jumbotron">
+                <span class="btn btn-primary text-center">copright &copy; xgqfrms 2016</span>
+            </p>
         </div>
     </footer>
     <!-- js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="01-Drum-Kit.js">
+        window.onload = (() => {
+            test();
+        });
+        // You can just simply using Jquery insteaded!
+    </script>
 </body>
 </html>

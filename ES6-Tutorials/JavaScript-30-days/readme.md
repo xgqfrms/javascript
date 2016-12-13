@@ -11,3 +11,6 @@ https://github.com/wesbos/JavaScript30
 https://github.com/nitishdayal/JavaScript30/tree/master/exercises  
 
 
+## browser-sync  
+
+browser-sync start --server --files "./codes/*.html & ./codes/*.js"
