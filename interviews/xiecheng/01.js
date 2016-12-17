@@ -107,12 +107,11 @@ fn(1);
 
 
 function fn(a) {
-    function a() { }
-    var a = 2;
+    var a;
+    a = function() { }
     // function hoisting > variable hoisting
     console.log("a1 = " + a);
-    var a = 2;
-    function a() { }
+    a = 2;
     console.log("a2 = " + a);
 }
 fn(1);
@@ -139,6 +138,8 @@ http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
 https://rainsoft.io/javascript-hoisting-in-details/
 http://stackoverflow.com/questions/7506844/javascript-function-scoping-and-hoisting/41199567#41199567  
 
+
+http://stackoverflow.com/questions/41198746/how-to-understand-javascript-in-deep-with-var-scope-closure
  */
 
 
