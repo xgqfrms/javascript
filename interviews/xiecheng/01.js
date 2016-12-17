@@ -29,12 +29,35 @@ var foo = {
 
 var go = foo.baz.bar;
 
-console.log(go());
-console.log(foo.baz.bar());
+console.log(go());// 3
+console.log(foo.baz.bar());// 1
 
 // 03
+console.log(typeof(null));// object (Null)
+console.log(typeof({}));// object (Object)
+console.log(typeof([]));// object (Array)
+console.log(typeof(undefined));// undefined
 
+console.log(typeof(NaN));// number 
+console.log(typeof(Null));// undefined 
+
+console.log(typeof(function(){}));// function 
 
 // 04
 
+
 // 05
+
+
+// 06
+
+
+
+
+
+
+
+
+
+
+
