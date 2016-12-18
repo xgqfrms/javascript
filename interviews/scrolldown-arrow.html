@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scrolldown arrow</title>
+    <!-- https://repl.it/site/api -->
+    <style>
+        .scrolldownWrapper {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            left: 0;
+            /*
+            right: 0;
+            left: 0;
+            position balance 位置平衡
+             */
+            margin-right: auto;
+            margin-left: auto;
+            -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        .scrolldown {
+            width: 50px;
+            height: 50px;
+            border-right: 7px solid rgba(0,255,0,0.7);
+            border-bottom: 7px solid rgba(255,0,255,0.7);
+            /*
+            width: 20px;
+            height: 20px;
+            border-right: 1px solid #807F7F;
+            border-bottom: 1px solid #807F7F;
+             */
+            transform: rotate(45deg);
+            margin: auto;
+        }
+        .fadeInDown {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            display: block;
+        }
+        section.marketingSection.marketingHeader
+        {
+            background-color: #fff;
+            color: #807F7F;
+            min-height: calc(100vh - 60px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .marketingSection {
+            text-align: center;
+            line-height: 1;
+            width: 100%;
+            background-color: #fff;
+        }
+        div{
+            width: 100%;
+            color: #807F7F;
+            font-family: Raleway;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        div.marketingPage
+        .marketingPage {
+            font-family: Raleway, sans-serif;
+        }
+        @keyframes fadeInDown
+        0% {
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <style>
+        .box-lr{
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 100px;
+        }
+        .box-tb{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100px;
+        }
+        .box-all{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: #000;
+            color: #fff;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: left;
+            /*beautiful*/
+            border-radius: 15px;
+            border-bottom: 3px dashed #ff0;
+            border-top: 7px solid #0ff;
+            border-left: 3px solid #00f;
+            border-right: 7px dashed #cba;
+        }
+        .box:hover{
+            box-shadow: 3px 7px 12px rgba(255,0,255,0.7);
+        }
+        .box span.h{
+            color: #0f0;
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolldownWrapper fadeInDown">
+        <div class="scrolldown"></div>
+    </div>
+    <div class="box box-all">
+        <span class="h">box-all</span>
+        position: absolute;<br>
+        top: 0;<br>
+        right: 0;<br>
+        bottom: 0;<br>
+        left: 0;<br>
+    </div>
+    <div class="box box-lr">
+        <span class="h">box-lr</span>
+        position: absolute;<br>
+        right: 0;<br>
+        left: 0;<br>
+        bottom: 100px;<br>
+    </div>
+    <div class="box box-tb">
+        <span class="h">box-tb</span>
+        position: absolute;<br>
+        top: 0;<br>
+        bottom: 0;<br>
+        left: 100px;<br>
+    </div>
+</body>
+</html>

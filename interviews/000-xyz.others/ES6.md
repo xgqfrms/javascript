@@ -39,6 +39,11 @@ name is a property key that is a String value.
 
 
 
+## Preparing for ECMAScript 6: let and const  
+
+https://www.sitepoint.com/preparing-ecmascript-6-let-const/  
+
+
 
 
 
