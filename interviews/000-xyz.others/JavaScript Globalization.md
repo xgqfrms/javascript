@@ -1,15 +1,10 @@
 # JavaScript Globalization  
 
 https://github.com/ufo-github/globalize/tree/master/Tutorial  
+https://gist.github.com/xgqfrms-GitHub/949bfb81108676f4f707166a052b8f9b  
+https://github.com/ufo-github/Intl.js  
+https://github.com/ufo-github/i18next  
 
-# JavaScript Globalization 
-
-https://github.com/globalizejs/globalize  
-
-
-https://github.com/rxaviers/javascript-globalization  
-
-http://formatjs.io/github/  
 
 ## ECMAScript Internationalization API Specification  
 http://www.ecma-international.org/ecma-402/1.0/ECMA-402.pdf  
@@ -28,7 +23,8 @@ Intl.DateTimeFormat('zh-CN').format(x);
 // "2016/12/18"
 ``` 
 
-
+## Compatibility implementation of (ECMA-402)
+https://github.com/ufo-github/Intl.js  
 
 
 
@@ -60,7 +56,6 @@ http://userguide.icu-project.org/formatparse/messages
 ## i18next internationalization framework  
 http://i18next.com/  
 https://github.com/ufo-github/i18next  
-https://github.com/actimeo/ng2-i18next  
 
 https://github.com/i18next/react-i18next  
 
@@ -69,5 +64,8 @@ http://cldr.unicode.org/index/downloads/cldr-30
 http://rxaviers.github.io/globalize-modern-apps/#/0/17  
 
 
-
+# JavaScript Globalization 
+https://github.com/globalizejs/globalize  
+https://github.com/rxaviers/javascript-globalization  
+http://formatjs.io/github/  
 
