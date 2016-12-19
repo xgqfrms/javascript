@@ -5,6 +5,7 @@
     <title>test</title>
 </head>
 <body>
+    <!-- 
     <input type="text" id="input-id" placeholder="test" value="test-value">
     <script>
         let x = document.getElementById('input-id');
@@ -14,7 +15,25 @@
         console.log( x.text);
         console.log( x.value);
     </script>
-    <a href="https://twitter.com/intent/tweet?screen_name=xgqfrms" class="twitter-mention-button" data-show-count="true" target="_blank">Tweet to @xgqfrms</a>
+     -->
+    <ul id="uid">
+        <li><a href="">num1</a></li>
+        <li><a href="">num2</a></li>
+        <li><a href="">num3</a></li>
+    </ul>
+    <script>
+        let ul = document.getElementById('uid');
+        let lis = ul.childs;
+        // DOM nodes
+        for (var i = 0; i < ul.length; i++) {
+            ul[i];
+            // query li names
+            li[i].onclick = function () {
+                console.log(i);
+            }();
+        }
+    </script>
+    <!-- <a href="https://twitter.com/intent/tweet?screen_name=xgqfrms" class="twitter-mention-button" data-show-count="true" target="_blank">Tweet to @xgqfrms</a> -->
     <!-- <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 </body>
 </html>

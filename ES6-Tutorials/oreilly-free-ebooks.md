@@ -97,15 +97,15 @@ http://www.oreilly.com/iot/free/
 
 ## Free Programming Ebooks  
 
-http://www.oreilly.com/programming/free/
+http://www.oreilly.com/programming/free/files/
 
-http://www.oreilly.com/programming/free/files//functional-programming-python.pdf
+http://www.oreilly.com/programming/free/files/functional-programming-python.pdf
 
-http://www.oreilly.com/programming/free/files//why-reactive.pdf
+http://www.oreilly.com/programming/free/files/why-reactive.pdf
 
-http://www.oreilly.com/programming/free/files//ten-steps-to-linux-survival.pdf
+http://www.oreilly.com/programming/free/files/ten-steps-to-linux-survival.pdf
 
-http://www.oreilly.com/programming/free/files//microservices-for-java-developers.pdf 
+http://www.oreilly.com/programming/free/files/microservices-for-java-developers.pdf 
 
 http://www.oreilly.com/programming/free/files/object-oriented-vs-functional-programming.pdf
 
@@ -117,7 +117,9 @@ http://www.oreilly.com/programming/free/files/whats-new-in-swift-3.pdf
 
 
 
+##  http://www.oreilly.com/web-platform/free/files/  
 
+http://www.oreilly.com/web-platform/free/files/Transforms_in_CSS.pdf  
 
 
 
@@ -131,4 +133,4 @@ http://www.epconcommunities.com/assets/upload/youdontknowjsupandgoing.pdf
 
 
 
-xgqfrms@gmail.com
+

@@ -21,14 +21,19 @@ for (var i = 1; i <= 3; i++) {
 }
 // 1, 2, 3
 
-// 08   
+// 08 how to remove the duplication elements of array  
 
 
 
-// 09   
+// 09 define a log function to replace the console.log()  
 
 
-// 10   
+
+
+// 10  alert each clicked li num  
+
+
+
 
 
 
