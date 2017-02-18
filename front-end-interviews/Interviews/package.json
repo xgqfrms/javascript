@@ -1,0 +1,30 @@
+{
+  "name": "interviews",
+  "version": "1.0.0",
+  "description": "To help software engineers prepare for interviews.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-cory/Interviews.git"
+  },
+  "keywords": [
+    "interviews",
+    "interview",
+    "questions",
+    "interview",
+    "prep"
+  ],
+  "author": "alex-cory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-cory/Interviews/issues"
+  },
+  "homepage": "https://github.com/alex-cory/Interviews#readme",
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "lodash": "^4.12.0"
+  }
+}

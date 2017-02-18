@@ -1,4 +1,5 @@
 let foo, go, go1, go2, x = 3;
+
 foo = {
     x: 2,
     baz: {
@@ -20,3 +21,14 @@ console.log(go1);
 console.log(go2);
 console.log(foo.baz.bar());
 console.log(foo.baz.bar);
+
+/*
+
+Object
+
+this
+
+chain 
+
+
+*/

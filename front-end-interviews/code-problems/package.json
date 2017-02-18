@@ -1,0 +1,29 @@
+{
+  "name": "code-problems",
+  "private": true,
+  "description": "Repository full of code problems and common solutions.",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha tests/javascript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/code-problems.git"
+  },
+  "keywords": [
+    "code",
+    "problems",
+    "interview",
+    "programming"
+  ],
+  "author": "Blake Embrey",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/code-problems/issues"
+  }
+}
