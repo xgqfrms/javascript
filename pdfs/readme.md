@@ -14,11 +14,11 @@ June 2016(ES2016/ES7)
 
 March 2014(JavaScript)
 
-## [TypeScript Language Specification](https://javascript.xgqfrms.xyz/pdfs/TypeScript Language Specification.pdf)
+## [TypeScript Language Specification](https://javascript.xgqfrms.xyz/pdfs/TypeScript%20Language%20Specification.pdf)
 
 January 2016(TypeScript for AngularJS 2.x)
 
-https://javascript.xgqfrms.xyz/pdfs/TypeScript%20Language%20Specification.pdf
+
 
 
 ## [2022 version typescript-handbook.pdf](https://cdn.xgqfrms.xyz/pdfs/typescript-handbook.pdf)
