@@ -21,7 +21,7 @@ January 2016(TypeScript for AngularJS 2.x)
 
 
 
-## [2022 version typescript-handbook.pdf](https://cdn.xgqfrms.xyz/pdfs/typescript-handbook.pdf)
+## [2022 version typescript-handbook.pdf](https://javascript.xgqfrms.xyz/pdfs/typescript-handbook.pdf)
 
 This copy of the TypeScript handbook was created on Wednesday, `September 28, 2022` against commit c3f0d8 with `TypeScript 4.8`.
 
